@@ -1,1 +1,4 @@
-Sitemap: https://bymonolog.com/sitemap.xml
+User-agent: *
+Allow: /
+
+Sitemap: https://www.kllo.com.ua/sitemap.xml

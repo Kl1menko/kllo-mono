@@ -1171,3 +1171,18 @@ html.wf-design-mode .guide_wrap {
   font-style: normal;
   font-display: swap;
 }
+
+/* ── Зменшений розмір лого KLLO у хедері (десктоп + мобільна) ── */
+.navbar_home_svg {
+  max-width: 6rem; /* десктоп: було ~8rem */
+}
+@media screen and (min-width: 1920px) {
+  .navbar_home_svg {
+    max-width: 6.5rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  .navbar_home_svg {
+    max-width: 4rem; /* мобільна: було 5rem */
+  }
+}

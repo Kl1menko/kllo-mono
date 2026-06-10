@@ -1,0 +1,11 @@
+# Бекапи / тимчасові
+.backup/
+*.preformat.html
+*.before_cleanup.html
+
+# OS
+.DS_Store
+
+# Редактори
+.vscode/
+.idea/

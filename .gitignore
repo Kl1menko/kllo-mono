@@ -3,6 +3,9 @@
 *.preformat.html
 *.before_cleanup.html
 
+# Локальний README (не публікуємо в репо)
+README.md
+
 # OS
 .DS_Store
 

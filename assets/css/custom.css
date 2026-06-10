@@ -1186,3 +1186,17 @@ html.wf-design-mode .guide_wrap {
     max-width: 3rem; /* мобільна: було 5rem */
   }
 }
+
+/* ── Hero на всю висоту екрана на мобільних (iPhone тощо) ── */
+@media screen and (max-width: 767px) {
+  .hero_home_wrap {
+    height: 100vh; /* фолбек для старих браузерів */
+    height: 100dvh; /* динамічна висота — повний екран з урахуванням UI браузера */
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .hero_home_cover {
+    height: 100vh;
+    height: 100dvh;
+  }
+}

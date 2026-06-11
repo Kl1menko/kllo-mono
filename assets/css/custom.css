@@ -1137,19 +1137,6 @@ html.wf-design-mode .guide_wrap {
   }
 }
 
-/* CTA-секція: фонове фото має надійно заповнювати блок і лежати ПІД текстом
-   (.cta_home_contain має z-index:2), незалежно від JS-паралаксу. */
-.cta_home_cover {
-  z-index: 1;
-}
-.cta_home_visual {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .footer_canvas_svg {
   width: 4.5rem;
   height: auto;

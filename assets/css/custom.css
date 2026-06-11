@@ -34,7 +34,7 @@ html.lenis, html.lenis body {
 
 [data-animate], .navbar_wrap {
   visibility: hidden;
-  opacity 0:
+  opacity: 0;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -85,7 +85,7 @@ html.lenis, html.lenis body {
 
 .about_overlay_close, .menu_overlay_close {
 	opacity: 0;
-  visiblity: hidden;
+  visibility: hidden;
 }
 
 .about_modal_contain {
@@ -1137,9 +1137,16 @@ html.wf-design-mode .guide_wrap {
   }
 }
 
+/* CTA-секція: фонове фото має надійно заповнювати блок і лежати ПІД текстом
+   (.cta_home_contain має z-index:2), незалежно від JS-паралаксу. */
+.cta_home_cover {
+  z-index: 1;
+}
 .cta_home_visual {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: 105%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -1150,8 +1157,8 @@ html.wf-design-mode .guide_wrap {
   max-width: none;
   flex: 0 0 auto;
   background-color: currentColor;
-  -webkit-mask: url("../img/logo-kllo.svg") left center / contain no-repeat;
-  mask: url("../img/logo-kllo.svg") left center / contain no-repeat;
+  -webkit-mask: url("https://cdn.kllo.com.ua/assets/img/logo-kllo.svg") left center / contain no-repeat;
+  mask: url("https://cdn.kllo.com.ua/assets/img/logo-kllo.svg") left center / contain no-repeat;
 }
 @media screen and (min-width: 1920px) {
   .footer_canvas_svg {

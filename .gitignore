@@ -12,3 +12,14 @@ README.md
 # Редактори
 .vscode/
 .idea/
+
+# CDN credentials (не в репо)
+scripts/cdn.env
+
+# Медіа роздається з CDN (cdn.kllo.com.ua), у репо не тримаємо.
+# Локальні копії лишаються на диску для scripts/deploy-media.sh.
+# ВИНЯТОК: шрифти лишаються локальними (CORS на крос-доменних woff2/ttf),
+# тому assets/fonts/ НЕ ігнорується і трекається у git.
+assets/img/
+assets/video/
+assets/audio/

@@ -4688,7 +4688,7 @@ figure {
 }
 .styleguide_flex_wrap {
   aspect-ratio: 1;
-  background-image: url(../img/dots.svg);
+  background-image: url(https://cdn.kllo.com.ua/assets/img/dots.svg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 88%;
@@ -6263,7 +6263,7 @@ figure {
   z-index: 2147483647;
   opacity: 1;
   mix-blend-mode: color-dodge;
-  background-image: url(../img/download.png);
+  background-image: url(https://cdn.kllo.com.ua/assets/img/download.png);
   background-position: 0 0;
   background-attachment: scroll;
   width: 100vw;

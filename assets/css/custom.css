@@ -1200,3 +1200,24 @@ html.wf-design-mode .guide_wrap {
     height: 100dvh;
   }
 }
+
+/* ── Іконки технологій у секції "Technologies we work with" ── */
+/* simple-icons мають full-bleed viewBox 0 0 24 24 (без полів),     */
+/* тому масштабуємо їх униз, щоб візуальна вага збігалася з рештою.  */
+.problems_home_item .problems_home_image {
+  width: 100%;
+  height: auto;
+  max-width: 5rem;      /* десктоп: компактний розмір іконки */
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1920px) {
+  .problems_home_item .problems_home_image {
+    max-width: 6rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .problems_home_item .problems_home_image {
+    max-width: 3.5rem;
+  }
+}

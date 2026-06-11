@@ -14,11 +14,18 @@
  *   Заголовок: X-API-Key: <ключ>
  *   Поля:  file = <бінарний файл>
  *          path = "img/logo-kllo.svg"   (відносний шлях усередині assets/)
+ *
+ * Ключ: env CDN_UPLOAD_API_KEY або файл secret.php поряд (див. secret.php.example).
  */
 
 header('Content-Type: application/json; charset=utf-8');
 
-$apiKey = 'qNylSvdfy3aneryxEou0KXapnsZUoLPj4bFEZMvfnPU';
+// API-ключ читаємо з оточення або з секретного файлу (НЕ в git).
+// На сервері: створи api/secret.php з рядком <?php return 'твій-ключ';
+$apiKey = getenv('CDN_UPLOAD_API_KEY') ?: '';
+if ($apiKey === '' && is_file(__DIR__ . '/secret.php')) {
+    $apiKey = (string) (require __DIR__ . '/secret.php');
+}
 
 function fail(int $code, string $msg, array $extra = []): void {
     http_response_code($code);
